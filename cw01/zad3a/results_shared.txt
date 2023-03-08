@@ -1,0 +1,59 @@
+> Time: real: 7273 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 675117 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 718679 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 729299 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 665309 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 736782 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 934974 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 642516 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1046824 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 653807 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 919375 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 948350 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 712727 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 623230 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 629942 ns, user: 0 ticks, system: 0 ticks
+>   38  152 1072 ./Makefile
+Time: real: 1342 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1513 ns, user: 0 ticks, system: 0 ticks
+>   78  177 1978 ./buffer.c
+Time: real: 451 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 351 ns, user: 0 ticks, system: 0 ticks
+>  19  38 492 ./buffer.h
+Time: real: 400 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 331 ns, user: 0 ticks, system: 0 ticks
+>    4   47 3656 ./buffer.o
+Time: real: 391 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 321 ns, user: 0 ticks, system: 0 ticks
+>    7   62 3930 ./libbuffer.a
+Time: real: 371 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 331 ns, user: 0 ticks, system: 0 ticks
+>     5    88 16432 ./libbuffer.so
+Time: real: 431 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 341 ns, user: 0 ticks, system: 0 ticks
+>   84  261 2963 ./main.c
+Time: real: 381 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 321 ns, user: 0 ticks, system: 0 ticks
+>    10    95 16616 ./main_dynamic
+Time: real: 381 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 330 ns, user: 0 ticks, system: 0 ticks
+>  100  317 3808 ./main_dynamic.c
+Time: real: 371 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 320 ns, user: 0 ticks, system: 0 ticks
+>    12    92 16696 ./main_shared
+Time: real: 361 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 320 ns, user: 0 ticks, system: 0 ticks
+>    12    92 16696 ./main_static
+Time: real: 371 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 331 ns, user: 0 ticks, system: 0 ticks
+>   54  504 2607 ./results_dynamic.txt
+Time: real: 371 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 341 ns, user: 0 ticks, system: 0 ticks
+> 0 0 0 ./results_shared.txt
+Time: real: 381 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 341 ns, user: 0 ticks, system: 0 ticks
+>   58  541 2797 ./results_static.txt
+Time: real: 371 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 361 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 621 ns, user: 0 ticks, system: 0 ticks
+> 
