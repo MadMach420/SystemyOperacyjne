@@ -31,7 +31,8 @@ char* read_wc_to_buffer(char* filename) {
     strcat(command, filename);
     strcat(command, " > ");
     strcat(command, tmp_name);
-    system(command);
+    system(command);void resize_buffer_struct(BufferStruct* buffer_struct);
+
 
     FILE* tmp_file = fdopen(tmp_file_desc, "rb");
     char* wc_buffer = NULL;
@@ -51,7 +52,6 @@ void wc_file_to_buffer_struct(BufferStruct* buffer_struct, char* filename) {
     } else {
         buffer_struct->buffers[buffer_struct->current_size++] = wc_buffer;
     }
-
 }
 
 

@@ -6,8 +6,6 @@ typedef struct {
 
 BufferStruct init_buffer_struct(int size);
 
-void resize_buffer_struct(BufferStruct* buffer_struct);
-
 char* read_wc_to_buffer(char* filename);
 
 void wc_file_to_buffer_struct(BufferStruct* buffer_struct, char* filename);

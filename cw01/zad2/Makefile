@@ -4,8 +4,8 @@ main_static: main.c static_buffer_lib
 	gcc -Wall -o main_static main.c -L. -lbuffer
 
 main_shared: main.c shared_buffer_lib
-	export LD_LIBRARY_PATH=$(pwd)
 	gcc -Wall -o main_shared main.c -L. -lbuffer
+	sudo cp libbuffer.so /usr/lib
 
 main_dynamic: main_dynamic.c shared_buffer_lib
 	gcc -Wall -o main_dynamic main_dynamic.c

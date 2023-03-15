@@ -1,6 +1,6 @@
-all: mains test_no_o
+all: test
 
-test_no_o: create_tests
+test: mains create_tests
 	./main_static < input > results_static.txt
 	./main_shared < input > results_shared.txt
 	./main_dynamic < input > results_dynamic.txt
@@ -35,4 +35,4 @@ shared_buffer_lib: buffer.c
 	gcc -Wall -shared -fPIC buffer.c -o libbuffer.so
 
 clean:
-	rm *o *a main_static main_shared main_dynamic input
+	rm *o *a main_static main_shared main_dynamic input results*

@@ -1,3 +1,5 @@
+all: static_buffer_lib shared_buffer_lib
+
 static_buffer_lib: buffer.c
 	gcc -Wall -c buffer.c
 	ar rcs libbuffer.a buffer.o

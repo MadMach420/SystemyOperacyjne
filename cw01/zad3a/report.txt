@@ -1,0 +1,149 @@
+Roznice w czasie wykonania sa nieduze, ale zauwazalne. Dla wiekszosci komend najszybciej dziala biblioteka dynamiczna, pozniej dzielona, a najwolniej statyczna.
+Wszystkie wyniki z jednego uruchomienia testow, wyniki moga sie oczywiscie roznic miedzy wykonaniami.
+
+
+Statyczna:
+> Time: real: 10660 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 947937 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 984872 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 880543 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 864408 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 848853 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1067019 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 912864 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1171388 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 781490 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1015481 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1205831 ns, user: 0 ticks, system: 0 ticks
+>   38  153 1071 ./Makefile
+Time: real: 1351 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 430 ns, user: 0 ticks, system: 0 ticks
+>   78  177 1978 ./buffer.c
+Time: real: 381 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 271 ns, user: 0 ticks, system: 0 ticks
+>  19  38 492 ./buffer.h
+Time: real: 320 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>    4   47 3656 ./buffer.o
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 250 ns, user: 0 ticks, system: 0 ticks
+>    7   62 3930 ./libbuffer.a
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 240 ns, user: 0 ticks, system: 0 ticks
+>     5    88 16432 ./libbuffer.so
+Time: real: 331 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 250 ns, user: 0 ticks, system: 0 ticks
+>   84  261 2963 ./main.c
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    10    95 16616 ./main_dynamic
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 261 ns, user: 0 ticks, system: 0 ticks
+>  100  317 3808 ./main_dynamic.c
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 271 ns, user: 0 ticks, system: 0 ticks
+>    12    92 16696 ./main_shared
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    11   126 17248 ./main_static
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 300 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 241 ns, user: 0 ticks, system: 0 ticks
+
+
+Dzielona:
+> Time: real: 7987 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 894406 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 816623 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 855889 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 862515 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 882385 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1104395 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 819845 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1107428 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1287938 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1262794 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1116447 ns, user: 0 ticks, system: 0 ticks
+>   38  153 1071 ./Makefile
+Time: real: 1261 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1211 ns, user: 0 ticks, system: 0 ticks
+>   78  177 1978 ./buffer.c
+Time: real: 360 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 291 ns, user: 0 ticks, system: 0 ticks
+>  19  38 492 ./buffer.h
+Time: real: 320 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    4   47 3656 ./buffer.o
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>    7   62 3930 ./libbuffer.a
+Time: real: 281 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>     5    88 16432 ./libbuffer.so
+Time: real: 341 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>   84  261 2963 ./main.c
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 251 ns, user: 0 ticks, system: 0 ticks
+>    10    95 16616 ./main_dynamic
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 271 ns, user: 0 ticks, system: 0 ticks
+>  100  317 3808 ./main_dynamic.c
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    12    92 16696 ./main_shared
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    11   126 17248 ./main_static
+Time: real: 291 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 300 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 630 ns, user: 0 ticks, system: 0 ticks
+
+
+Dynamiczna:
+> Time: real: 7987 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 894406 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 816623 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 855889 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 862515 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 882385 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1104395 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 819845 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1107428 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1287938 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1262794 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1116447 ns, user: 0 ticks, system: 0 ticks
+>   38  153 1071 ./Makefile
+Time: real: 1261 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 1211 ns, user: 0 ticks, system: 0 ticks
+>   78  177 1978 ./buffer.c
+Time: real: 360 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 291 ns, user: 0 ticks, system: 0 ticks
+>  19  38 492 ./buffer.h
+Time: real: 320 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    4   47 3656 ./buffer.o
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>    7   62 3930 ./libbuffer.a
+Time: real: 281 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>     5    88 16432 ./libbuffer.so
+Time: real: 341 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 260 ns, user: 0 ticks, system: 0 ticks
+>   84  261 2963 ./main.c
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 251 ns, user: 0 ticks, system: 0 ticks
+>    10    95 16616 ./main_dynamic
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 271 ns, user: 0 ticks, system: 0 ticks
+>  100  317 3808 ./main_dynamic.c
+Time: real: 280 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    12    92 16696 ./main_shared
+Time: real: 290 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 270 ns, user: 0 ticks, system: 0 ticks
+>    11   126 17248 ./main_static
+Time: real: 291 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 300 ns, user: 0 ticks, system: 0 ticks
+> Time: real: 630 ns, user: 0 ticks, system: 0 ticks
