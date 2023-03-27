@@ -1,7 +1,10 @@
-all: main
+all: main secondary
 
-main: main.c
+main: main.c secondary
 	gcc -Wall -o main main.c
 
+secondary: secondary.c
+	gcc -Wall -o secondary secondary.c
+
 clean:
-	rm main
+	rm main secondary

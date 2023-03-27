@@ -1,0 +1,4 @@
+Sygnal ignorowany jest ignorowany przez wszystkie procesy.
+Sygnal obslugiwany przez handler jest obslugiwany przez proces macierzysty i potomny, po exec jest ignorowany.
+Sygnal blokowany jest widoczny jako oczekujacy przez wszystkie procesy.
+Sygnal blokowany i "przejety" przez sigpending() w procesie macierzystym nie jest oczekujacy w pozostalych.
