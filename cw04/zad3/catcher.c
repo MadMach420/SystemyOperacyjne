@@ -39,7 +39,7 @@ void handler(int sig, siginfo_t *info, void *ucontext) {
             exit(0);
         }
         default: {
-            printf("Niepoprawny kod!");
+            printf("Niepoprawny kod!\n");
             exit(1);
         }
     }
