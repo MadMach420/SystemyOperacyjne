@@ -19,7 +19,7 @@ int client_running = 1;
 
 void init_client() {
     char request[MAX_MESSAGE_LENGTH], response[MAX_MESSAGE_LENGTH];
-    sprintf(request, "%d%s", INIT, "/queue_1234");
+    sprintf(request, "%d%s", INIT, client_queue_name);
 
     mq_send(server_queue_desc, request, MAX_MESSAGE_LENGTH, INIT);
     mq_receive(client_queue_desc, response, MAX_MESSAGE_LENGTH, NULL);
@@ -159,7 +159,7 @@ void message_listener() {
 int main() {
     sprintf(client_queue_name, "/queue%d", getpid());
 
-    client_queue_desc = mq_open("/queue_1234", O_RDWR | O_CREAT, 0660);
+    client_queue_desc = mq_open(client_queue_name, O_RDWR | O_CREAT, 0660, NULL);
     server_queue_desc = mq_open(SERVER_QUEUE_NAME, O_WRONLY);
 
     printf("%d\n", client_queue_desc);
